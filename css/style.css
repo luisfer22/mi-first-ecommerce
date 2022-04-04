@@ -2,6 +2,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+/* header */
+.page-header{
+    margin: 0 auto;
+    padding: 25px;
+    background-image: url(/images/angel-header-image.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    /* background-attachment: fixed; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    
+    place-content: center;
+
 }
 
+.container{
+    grid-column-start: 1;
+    grid-column-end: 1 ;
+}
+
+.logo{
+    width: 60px;
+}
+
+.main-nav{
+    grid-column-start: 2;
+    grid-column-end: 6 ;
+}
+
+
+.nav-wrapper{
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    
+}
+
+.nav-wrapper li{
+    padding: 20px;
+}
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 4 ;
+    justify-content: center;
+}
+
+h1{
+    padding: 18px 0px;
+}
+
+.main-h4{
+    padding: 18px 0px;
+    max-width: 580px;
+}
+
+.buttons-wrappers{
+    margin-top: 50px;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 230px;
+    font-weight: 600;
+    padding: 14px 28px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    
+}
+
+.btn-secondary{
+    color: #000000;
+}
 
